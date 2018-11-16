@@ -23,3 +23,8 @@ https://github.com/TexZK
 Diego Ismirlian aka dismirlian
 https://github.com/dismirlian
 USB Host stack author
+
+David Buzz
+https://github.com/davidbuzz
+ESP32 Series Microcontrollers
+

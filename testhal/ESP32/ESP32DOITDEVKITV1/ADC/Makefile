@@ -97,11 +97,11 @@ endif
 #
 
 # Define project name here
-PROJECT = rt
+PROJECT = esp32-nil-testhal
 
 # Imported source files and paths
-CHIBIOS = /home/buzz/chibi-esp/ChibiStudio/chibios_trunk
-CHIBIOS_CONTRIB = /home/buzz/chibi-esp/ChibiStudio/chibios_trunk/community
+CHIBIOS = /home/buzz/chibi-esp/ChibiOS-RT
+CHIBIOS_CONTRIB = /home/buzz/chibi-esp/ChibiOS-RT/community
 # Startup files.
 include $(CHIBIOS_CONTRIB)/os/common/startup/ESP32/compilers/GCC/mk/startup_esp32.mk
 # HAL-OSAL files (optional).
@@ -138,7 +138,7 @@ ASMSRC = $(STARTUPASM) $(PORTASM) $(OSALASM)
 INCDIR = $(CHIBIOS)/os/license \
 	 $(STARTUPINC) $(KERNINC) $(PORTINC) $(OSALINC) \
          $(HALINC) $(PLATFORMINC) $(BOARDINC) $(TESTINC) \
-         $(CHIBIOS)/os/various
+         $(CHIBIOS)/os/various $(CHIBIOS)/os/lib/include
 
 #
 # Project, sources and paths

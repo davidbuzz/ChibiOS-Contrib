@@ -271,6 +271,10 @@
 /* Port-specific settings (override port settings defaulted in nilcore.h).   */
 /*===========================================================================*/
 
+#define CH_CFG_USE_OBJ_FIFOS FALSE
+#define CH_CFG_USE_PIPES FALSE
+
+
 #endif  /* _CHCONF_H_ */
 
 /** @} */
